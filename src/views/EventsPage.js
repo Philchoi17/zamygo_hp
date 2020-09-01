@@ -49,12 +49,30 @@ const EventsPage = () => {
       <IndexNavbar />
       <EventsPageHeader />
       <Card>
+        {/* <CardImg
+          top
+          // width="100%"
+          // height="400px"
+          src={require("../assets/img/Tonko_House_Logo.png")}
+          alt="Card image cap"
+        /> */}
         <CardHeader>Tonko House</CardHeader>
         <CardBody>
-          <CardTitle>Tonko House Exhibition</CardTitle>
+          <CardTitle>Tonko House Animation Exhibition in Seoul</CardTitle>
+          <img
+            src={require("../assets/img/Tonko_House_Logo.png")}
+            alt="tonkohouselogo"
+            width="100px;"
+          />
           <CardText>
-            With supporting text below as a natural lead-in to additional
-            content.
+            Created by a former Pixar artist and art director, Tonko House
+            Animation Exhibition in Seoul 2019 will open its first exhibition
+            from May 3, 2019 to Aug. 31, 2019 at a special venue located in
+            Chungdam-dong. Located in a 1,322 m2 venue, this exhibition will
+            display close to 140 art works of character sketches, illustration,
+            videos, etc. and feature a special art program created by Tonko
+            House. Visitors can also download an AR app to experience moving
+            3-dimensional characters throughout the exhibition as well.
           </CardText>
           <Button href="/tonkohouse" color="primary">
             Read More
