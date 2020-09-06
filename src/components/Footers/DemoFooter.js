@@ -21,6 +21,7 @@ import React from "react";
 
 // reactstrap components
 import { Row, Container } from "reactstrap";
+import { Link } from "react-router-dom";
 
 function DemoFooter() {
   return (
@@ -30,10 +31,11 @@ function DemoFooter() {
           <nav className="footer-nav">
             <ul>
               <li>
-                <a
-                  href="/index"
+                <Link to="/index">
+                  {/* <a
+                  // href="/index"
                   // target="_blank"
-                >
+                  > */}
                   {/* ZamyGo */}
                   <img
                     alt="..."
@@ -41,31 +43,38 @@ function DemoFooter() {
                     style={{ width: "100px" }}
                     src={require("assets/img/zamygologo.png")}
                   />
-                </a>
+                  {/* </a> */}
+                </Link>
               </li>
               <li>
-                <a
-                  href="/about"
+                <Link to="/about">
+                  {/* <a
+                  // href="/about"
                   // target="_blank"
-                >
+                  > */}
                   About
-                </a>
+                  {/* </a> */}
+                </Link>
               </li>
               <li>
-                <a
-                  href="/events"
+                <Link to="/events">
+                  {/* <a
+                  // href="/events"
                   // target="_blank"
-                >
+                  > */}
                   Events
-                </a>
+                  {/* </a> */}
+                </Link>
               </li>
               <li>
-                <a
-                  href="/press"
+                <Link to="/press">
+                  {/* <a
+                  // href="/press"
                   // target="_blank"
-                >
+                  > */}
                   Press
-                </a>
+                  {/* </a> */}
+                </Link>
               </li>
             </ul>
           </nav>
