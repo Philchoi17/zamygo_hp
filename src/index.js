@@ -18,7 +18,8 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Redirect, Switch, Link } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 // styles
 import "assets/css/bootstrap.min.css";
@@ -37,33 +38,19 @@ import PressPage from "views/PressPage";
 // others
 // events
 import TonkoHouse from "views/events/TonkoHouseExhibition";
+import Amplify from "aws-amplify";
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
-      {/* <Route
-        path="/nucleo-icons"
-        render={(props) => <NucleoIcons {...props} />}
-      />
-      <Route
-        path="/landing-page"
-        render={(props) => <LandingPage {...props} />}
-      />
-      <Route
-        path="/profile-page"
-        render={(props) => <ProfilePage {...props} />}
-      />
-      <Route
-        path="/register-page"
-        render={(props) => <RegisterPage {...props} />}
-      /> */}
       <Route path="/about" render={(props) => <AboutPage {...props} />} />
       <Route path="/events" render={(props) => <EventsPage {...props} />} />
       <Route path="/press" render={(props) => <PressPage {...props} />} />
       {/* events */}
       <Route path="/tonkohouse" render={(props) => <TonkoHouse {...props} />} />
-
       <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,

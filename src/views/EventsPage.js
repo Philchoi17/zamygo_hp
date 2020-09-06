@@ -3,6 +3,7 @@ import React from "react";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 import EventsPageHeader from "components/Headers/EventsPageHeader";
+import { Link } from "react-router-dom";
 
 import {
   Button,
@@ -74,9 +75,14 @@ const EventsPage = () => {
             House. Visitors can also download an AR app to experience moving
             3-dimensional characters throughout the exhibition as well.
           </CardText>
-          <Button href="/tonkohouse" color="primary">
-            Read More
-          </Button>
+          <Link to="/tonkohouse">
+            <Button
+              // href="/tonkohouse"
+              color="primary"
+            >
+              Read More
+            </Button>
+          </Link>
         </CardBody>
       </Card>
       <DemoFooter />

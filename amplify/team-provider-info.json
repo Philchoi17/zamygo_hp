@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-zamygo-dev-171411-authRole",
+            "UnauthRoleArn": "arn:aws:iam::639414994423:role/amplify-zamygo-dev-171411-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::639414994423:role/amplify-zamygo-dev-171411-authRole",
+            "Region": "ap-northeast-2",
+            "DeploymentBucketName": "amplify-zamygo-dev-171411-deployment",
+            "UnauthRoleName": "amplify-zamygo-dev-171411-unauthRole",
+            "StackName": "amplify-zamygo-dev-171411",
+            "StackId": "arn:aws:cloudformation:ap-northeast-2:639414994423:stack/amplify-zamygo-dev-171411/7378a630-edbd-11ea-9f93-062fea8c1f78",
+            "AmplifyAppId": "dsxsfs1xt4z7q"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "dsxsfs1xt4z7q",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}

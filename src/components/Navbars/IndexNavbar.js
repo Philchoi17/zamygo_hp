@@ -31,6 +31,8 @@ import {
   Container,
 } from "reactstrap";
 
+import { Link } from "react-router-dom";
+
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -65,19 +67,21 @@ function IndexNavbar() {
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand
-            data-placement="bottom"
-            href="/index"
-            target="_blank"
-            title="ZamyGo"
-          >
-            ZamyGo
-            {/* <img
-              alt="..."
-              className="img-circle img-no-padding img-responsive"
-              src={require("assets/img/zamygologo.png")}
-            /> */}
-          </NavbarBrand>
+          <Link to="/index">
+            <NavbarBrand
+              data-placement="bottom"
+              // href="/index"
+              target="_blank"
+              title="ZamyGo"
+            >
+              ZamyGo
+              {/* <img
+                alt="..."
+                className="img-circle img-no-padding img-responsive"
+                src={require("assets/img/zamygologo.png")}
+              /> */}
+            </NavbarBrand>
+          </Link>
           <button
             aria-expanded={navbarCollapse}
             className={classnames("navbar-toggler navbar-toggler", {
@@ -98,47 +102,55 @@ function IndexNavbar() {
           <Nav navbar>
             {/* Navbar home button */}
             <NavItem>
-              <NavLink data-placement="bottom" href="/index" title="Home">
-                <i className="fa fa-home" /> Home
-                {/* <p className="d-lg-none">Home</p> */}
-              </NavLink>
+              <Link to="/index">
+                <NavLink data-placement="bottom" href="/index" title="Home">
+                  <i className="fa fa-home" /> Home
+                  {/* <p className="d-lg-none">Home</p> */}
+                </NavLink>
+              </Link>
             </NavItem>
             {/* Navbar about button */}
             <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="/about"
-                // target="_blank"
-                title="About"
-              >
-                <i className="fa fa-id-badge" />
-                About
-                {/* <p className="d-lg-none">About</p> */}
-              </NavLink>
+              <Link to="/about">
+                <NavLink
+                  data-placement="bottom"
+                  // href="/about"
+                  // target="_blank"
+                  title="About"
+                >
+                  <i className="fa fa-id-badge" />
+                  About
+                  {/* <p className="d-lg-none">About</p> */}
+                </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="/events"
-                // target="_blank"
-                title="Events"
-              >
-                <i className="fa fa-calendar" />
-                Events
-                {/* <p className="d-lg-none">Events</p> */}
-              </NavLink>
+              <Link to="/events">
+                <NavLink
+                  data-placement="bottom"
+                  // href="/events"
+                  // target="_blank"
+                  title="Events"
+                >
+                  <i className="fa fa-calendar" />
+                  Events
+                  {/* <p className="d-lg-none">Events</p> */}
+                </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="/press"
-                // target="_blank"
-                title="Star on GitHub"
-              >
-                <i className="nc-icon nc-air-baloon" />
-                Press
-                {/* <p className="d-lg-none">Press</p> */}
-              </NavLink>
+              <Link to="/press">
+                <NavLink
+                  data-placement="bottom"
+                  href="/press"
+                  // target="_blank"
+                  title="Star on GitHub"
+                >
+                  <i className="nc-icon nc-air-baloon" />
+                  Press
+                  {/* <p className="d-lg-none">Press</p> */}
+                </NavLink>
+              </Link>
             </NavItem>
             {/* <NavItem>
               <NavLink
