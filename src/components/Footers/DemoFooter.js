@@ -46,36 +46,15 @@ function DemoFooter() {
                   {/* </a> */}
                 </Link>
               </li>
-              <li>
-                <Link to="/about">
-                  {/* <a
-                  // href="/about"
-                  // target="_blank"
-                  > */}
-                  About
-                  {/* </a> */}
-                </Link>
+              {/* <li>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/events">
-                  {/* <a
-                  // href="/events"
-                  // target="_blank"
-                  > */}
-                  Events
-                  {/* </a> */}
-                </Link>
+                <Link to="/events">Events</Link>
               </li>
               <li>
-                <Link to="/press">
-                  {/* <a
-                  // href="/press"
-                  // target="_blank"
-                  > */}
-                  Press
-                  {/* </a> */}
-                </Link>
-              </li>
+                <Link to="/press">Press</Link>
+              </li> */}
             </ul>
           </nav>
           <div className="credits ml-auto">

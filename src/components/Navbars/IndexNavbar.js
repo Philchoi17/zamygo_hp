@@ -67,7 +67,7 @@ function IndexNavbar() {
     <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
       <Container>
         <div className="navbar-translate">
-          <Link to="/index">
+          <Link to="/">
             <NavbarBrand
               data-placement="bottom"
               // href="/index"
@@ -102,8 +102,12 @@ function IndexNavbar() {
           <Nav navbar>
             {/* Navbar home button */}
             <NavItem>
-              <Link to="/index">
-                <NavLink data-placement="bottom" href="/index" title="Home">
+              <Link to="/">
+                <NavLink
+                  data-placement="bottom"
+                  title="Home"
+                  style={{ color: "black" }}
+                >
                   <i className="fa fa-home" /> Home
                   {/* <p className="d-lg-none">Home</p> */}
                 </NavLink>
@@ -117,6 +121,7 @@ function IndexNavbar() {
                   // href="/about"
                   // target="_blank"
                   title="About"
+                  style={{ color: "black" }}
                 >
                   <i className="fa fa-id-badge" />
                   About
@@ -127,6 +132,7 @@ function IndexNavbar() {
             <NavItem>
               <Link to="/events">
                 <NavLink
+                  style={{ color: "black" }}
                   data-placement="bottom"
                   // href="/events"
                   // target="_blank"
@@ -141,10 +147,11 @@ function IndexNavbar() {
             <NavItem>
               <Link to="/press">
                 <NavLink
+                  style={{ color: "black" }}
                   data-placement="bottom"
-                  href="/press"
+                  // href="/press"
                   // target="_blank"
-                  title="Star on GitHub"
+                  title="Press"
                 >
                   <i className="nc-icon nc-air-baloon" />
                   Press

@@ -61,7 +61,7 @@ const AboutPage = () => {
           </div>
           <Row>
             <Col className="ml-auto mr-auto text-center" md="6">
-              <p>
+              <p style={{ color: "black" }}>
                 Steve is a Taiwanese American and the founder and CEO of ZamyGo.
                 He earned undergraduate and graduate degrees from Stanford
                 University and his MBA from the Kellogg School of Management at
