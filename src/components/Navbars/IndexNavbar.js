@@ -106,7 +106,7 @@ function IndexNavbar() {
                 <NavLink
                   data-placement="bottom"
                   title="Home"
-                  style={{ color: "black" }}
+                  style={{ color: "darkgrey" }}
                 >
                   <i className="fa fa-home" /> Home
                   {/* <p className="d-lg-none">Home</p> */}
@@ -121,7 +121,7 @@ function IndexNavbar() {
                   // href="/about"
                   // target="_blank"
                   title="About"
-                  style={{ color: "black" }}
+                  style={{ color: "darkgrey" }}
                 >
                   <i className="fa fa-id-badge" />
                   About
@@ -132,7 +132,7 @@ function IndexNavbar() {
             <NavItem>
               <Link to="/events">
                 <NavLink
-                  style={{ color: "black" }}
+                  style={{ color: "darkgrey" }}
                   data-placement="bottom"
                   // href="/events"
                   // target="_blank"
@@ -147,7 +147,7 @@ function IndexNavbar() {
             <NavItem>
               <Link to="/press">
                 <NavLink
-                  style={{ color: "black" }}
+                  style={{ color: "darkgrey" }}
                   data-placement="bottom"
                   // href="/press"
                   // target="_blank"

@@ -43,16 +43,24 @@ import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 
 ReactDOM.render(
-  <BrowserRouter basename='/'>
+  <Router basename="/">
     <Switch>
       <Route exact path="/" render={(props) => <Index {...props} />} />
       <Route exact path="/about" render={(props) => <AboutPage {...props} />} />
-      <Route exact path="/events" render={(props) => <EventsPage {...props} />} />
-      <Route exact  path="/press" render={(props) => <PressPage {...props} />} />
+      <Route
+        exact
+        path="/events"
+        render={(props) => <EventsPage {...props} />}
+      />
+      <Route exact path="/press" render={(props) => <PressPage {...props} />} />
       {/* events */}
-      <Route exact path="/tonkohouse" render={(props) => <TonkoHouse {...props} />} />
+      <Route
+        exact
+        path="/tonkohouse"
+        render={(props) => <TonkoHouse {...props} />}
+      />
       <Redirect to="/" />
     </Switch>
-  </BrowserRouter>,
+  </Router>,
   document.getElementById("root")
 );
