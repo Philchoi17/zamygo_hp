@@ -38,9 +38,9 @@ import PressPage from "views/PressPage";
 // others
 // events
 import TonkoHouse from "views/events/TonkoHouseExhibition";
-import Amplify from "aws-amplify";
-import awsExports from "./aws-exports";
-Amplify.configure(awsExports);
+// import Amplify from "aws-amplify";
+// import awsExports from "./aws-exports";
+// Amplify.configure(awsExports);
 
 ReactDOM.render(
   <Router basename="/">
