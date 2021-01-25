@@ -90,12 +90,12 @@ const AboutPage = () => {
                 an advisor to Everest Education, a leading education center
                 Vietnam.
               </p>
-              <br />
+              {/* <br />
               <a href="mailto: steve@zamygo.com">
                 <Button className="btn-round" color="default" outline>
                   <i className="fa fa-envelope-square" /> Email Me
                 </Button>
-              </a>
+              </a> */}
             </Col>
           </Row>
           <br />
