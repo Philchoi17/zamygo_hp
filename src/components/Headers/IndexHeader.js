@@ -64,7 +64,7 @@ function IndexHeader() {
               launch an exhibition of their characters and stories in Korea.
             </p>
             <br />
-            <Button
+            {/* <Button
               href="https://www.youtube.com/watch?v=UR1ttTmXKnY"
               className="btn-round mr-1"
               color="neutral"
@@ -73,7 +73,7 @@ function IndexHeader() {
             >
               <i className="fa fa-play" />
               Watch video
-            </Button>
+            </Button> */}
             {/* <Button className="btn-round" color="neutral" type="button" outline>
               Download
             </Button> */}

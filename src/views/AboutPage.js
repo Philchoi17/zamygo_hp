@@ -45,13 +45,13 @@ const AboutPage = () => {
       <div className="section profile-content">
         <Container>
           <div className="owner">
-            <div className="avatar">
+            {/* <div className="avatar">
               <img
                 alt="..."
                 className="img-circle img-no-padding img-responsive"
                 src={require("assets/img/Profile_Pic.jpg")}
               />
-            </div>
+            </div> */}
             <div className="name">
               <h4 className="title">
                 Steve Yang <br />
