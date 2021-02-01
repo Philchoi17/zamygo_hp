@@ -114,7 +114,7 @@ function IndexNavbar() {
               </Link>
             </NavItem>
             {/* Navbar about button */}
-            <NavItem>
+            {/* <NavItem>
               <Link to="/about">
                 <NavLink
                   data-placement="bottom"
@@ -125,10 +125,9 @@ function IndexNavbar() {
                 >
                   <i className="fa fa-id-badge" />
                   About
-                  {/* <p className="d-lg-none">About</p> */}
                 </NavLink>
               </Link>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <Link to="/events">
                 <NavLink

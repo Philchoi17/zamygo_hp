@@ -46,7 +46,7 @@ ReactDOM.render(
   <Router basename="/">
     <Switch>
       <Route exact path="/" render={(props) => <Index {...props} />} />
-      <Route exact path="/about" render={(props) => <AboutPage {...props} />} />
+      {/* <Route exact path="/about" render={(props) => <AboutPage {...props} />} /> */}
       <Route
         exact
         path="/events"
